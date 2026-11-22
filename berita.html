@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita & Kegiatan - SMA Harapan Nusantara</title>
+  <link rel="stylesheet" href="css/ridho_style.css" />
+</head>
+<body class="ridho_body">
+  <header id="ridho_header">
+    <div class="ridho_container ridho_nav_wrapper">
+      <a href="index.html" class="ridho_brand">SMA Harapan Nusantara</a>
+      <button type="button" id="ridho_menu_toggle" class="ridho_toggle_btn" aria-label="Buka Menu">
+        Menu
+      </button>
+      <nav aria-label="Navigasi Utama">
+        <ul id="ridho_nav_list" class="ridho_menu">
+          <li><a href="index.html" class="ridho_menu_link">Beranda</a></li>
+          <li><a href="profil.html" class="ridho_menu_link">Profil</a></li>
+          <li><a href="akademik.html" class="ridho_menu_link">Akademik</a></li>
+          <li><a href="guru.html" class="ridho_menu_link">Guru</a></li>
+          <li><a href="berita.html" class="ridho_menu_link ridho_active">Berita</a></li>
+          <li><a href="galeri.html" class="ridho_menu_link">Galeri</a></li>
+          <li><a href="kontak.html" class="ridho_menu_link">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="ridho_main">
+    <section class="ridho_section">
+      <div class="ridho_container">
+        <h1 class="ridho_section_title">Berita & Kegiatan Terbaru</h1>
+        <p class="ridho_section_subtitle">
+          Informasi agenda akademik, perlombaan, dan kegiatan siswa di lingkungan sekolah.
+        </p>
+
+        <div class="ridho_filter_bar">
+          <button type="button" class="ridho_tab_btn ridho_berita_filter ridho_tab_active" data-news="semua">Semua</button>
+          <button type="button" class="ridho_tab_btn ridho_berita_filter" data-news="prestasi">Prestasi</button>
+          <button type="button" class="ridho_tab_btn ridho_berita_filter" data-news="agenda">Agenda</button>
+        </div>
+
+        <div class="ridho_grid_3">
+          <article class="ridho_card ridho_berita_card" data-news="prestasi">
+            <span class="ridho_badge">Prestasi</span>
+            <h2 class="ridho_card_title">Tim Sains Sekolah Raih Juara pada Lomba Inovasi Pelajar</h2>
+            <p class="ridho_card_text">
+              Perwakilan siswa kelas XI berhasil mempresentasikan proyek pemanfaatan sensor lingkungan dan meraih peringkat terbaik tingkat kota.
+            </p>
+          </article>
+
+          <article class="ridho_card ridho_berita_card" data-news="agenda">
+            <span class="ridho_badge">Agenda</span>
+            <h2 class="ridho_card_title">Pekan Literasi dan Pameran Karya Siswa</h2>
+            <p class="ridho_card_text">
+              Seluruh kelas menampilkan poster edukatif, mading digital, dan bedah buku di aula serta perpustakaan sekolah.
+            </p>
+          </article>
+
+          <article class="ridho_card ridho_berita_card" data-news="agenda">
+            <span class="ridho_badge">Agenda</span>
+            <h2 class="ridho_card_title">Workshop Keselamatan Digital & Etika Bermedia</h2>
+            <p class="ridho_card_text">
+              Sesi pembekalan bagi siswa mengenai keamanan akun, literasi informasi, dan tanggung jawab dalam ruang digital.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="ridho_footer">
+    <div class="ridho_container">
+      <p>&copy; 2026 SMA Harapan Nusantara.</p>
+    </div>
+  </footer>
+
+  <script src="js/ridho_app.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - SMA Harapan Nusantara</title>
+  <link rel="stylesheet" href="css/ridho_style.css" />
+</head>
+<body class="ridho_body">
+  <header id="ridho_header">
+    <div class="ridho_container ridho_nav_wrapper">
+      <a href="index.html" class="ridho_brand">
+        <img src="assets/img/logoo.png" alt="Logo SMA Harapan Nusantara" class="ridho_logo_img" />
+        <span>SMA Harapan Nusantara</span>
+      </a>
+      <button type="button" id="ridho_menu_toggle" class="ridho_toggle_btn" aria-label="Buka Menu">
+        Menu
+      </button>
+      <nav aria-label="Navigasi Utama">
+        <ul id="ridho_nav_list" class="ridho_menu">
+          <li><a href="index.html" class="ridho_menu_link ridho_active">Beranda</a></li>
+          <li><a href="profil.html" class="ridho_menu_link">Profil</a></li>
+          <li><a href="akademik.html" class="ridho_menu_link">Akademik</a></li>
+          <li><a href="guru.html" class="ridho_menu_link">Guru</a></li>
+          <li><a href="berita.html" class="ridho_menu_link">Berita</a></li>
+          <li><a href="galeri.html" class="ridho_menu_link">Galeri</a></li>
+          <li><a href="kontak.html" class="ridho_menu_link">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="ridho_main">
+    <section class="ridho_hero">
+      <div class="ridho_container">
+        <h1 class="ridho_hero_title">Mewujudkan Generasi Cerdas, Kreatif, dan Berkarakter</h1>
+        <p class="ridho_hero_desc">
+          Selamat datang di portal resmi SMA Harapan Nusantara. Temukan informasi profil sekolah,
+          program akademik, tenaga pendidik, berita terbaru, galeri kegiatan, serta layanan informasi.
+        </p>
+        <div class="ridho_btn_group">
+          <a href="profil.html" class="ridho_btn ridho_btn_primary">Lihat Profil Sekolah</a>
+          <a href="kontak.html" class="ridho_btn ridho_btn_outline">Hubungi Kami</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ridho_section">
+      <div class="ridho_container">
+        <h2 class="ridho_section_title">Highlight Informasi Sekolah</h2>
+        <p class="ridho_section_subtitle">Pilih kategori untuk menyaring informasi unggulan.</p>
+
+        <div class="ridho_filter_bar">
+          <button type="button" class="ridho_tab_btn ridho_home_filter ridho_tab_active" data-filter="semua">Semua</button>
+          <button type="button" class="ridho_tab_btn ridho_home_filter" data-filter="akademik">Akademik</button>
+          <button type="button" class="ridho_tab_btn ridho_home_filter" data-filter="kegiatan">Kegiatan</button>
+        </div>
+
+        <div class="ridho_grid_3">
+          <article class="ridho_card ridho_info_card" data-filter="akademik">
+            <h3 class="ridho_card_title">Kurikulum & Kelas Digital</h3>
+            <p class="ridho_card_text">
+              Pembelajaran terpadu berbasis proyek, literasi digital, dan laboratorium komputer.
+            </p>
+            <a href="akademik.html" class="ridho_link">Selengkapnya di Akademik &rarr;</a>
+          </article>
+
+          <article class="ridho_card ridho_info_card" data-filter="kegiatan">
+            <h3 class="ridho_card_title">Ekstrakurikuler & Prestasi</h3>
+            <p class="ridho_card_text">
+              Wadah pengembangan minat bakat siswa di bidang sains, seni budaya, olahraga, dan kepemimpinan.
+            </p>
+            <a href="berita.html" class="ridho_link">Lihat Berita Kegiatan &rarr;</a>
+          </article>
+
+          <article class="ridho_card ridho_info_card" data-filter="kegiatan">
+            <h3 class="ridho_card_title">Dokumentasi Lingkungan Sekolah</h3>
+            <p class="ridho_card_text">
+              Kumpulan foto dan video aktivitas belajar mengajar serta acara tahunan sekolah.
+            </p>
+            <a href="galeri.html" class="ridho_link">Buka Galeri Sekolah &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="ridho_footer">
+    <div class="ridho_container">
+      <p>&copy; 2026 SMA Harapan Nusantara.</p>
+    </div>
+  </footer>
+
+  <script src="js/ridho_app.js"></script>
+</body>
+</html>

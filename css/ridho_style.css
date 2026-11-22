@@ -1,0 +1,392 @@
+:root {
+  --ridho-primary: #0f4c81;
+  --ridho-secondary: #1e88e5;
+  --ridho-accent: #f59e0b;
+  --ridho-bg: #f4f7fb;
+  --ridho-surface: #ffffff;
+  --ridho-text: #1f2937;
+  --ridho-muted: #6b7280;
+  --ridho-border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.ridho_body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--ridho-bg);
+  color: var(--ridho-text);
+  line-height: 1.6;
+}
+
+.ridho_container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Header & Navigasi */
+#ridho_header {
+  background-color: var(--ridho-surface);
+  border-bottom: 1px solid var(--ridho-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.ridho_nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  gap: 16px;
+}
+
+.ridho_brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ridho-primary);
+  text-decoration: none;
+}
+
+.ridho_logo_img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  display: block;
+}
+
+.ridho_menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ridho_menu_link {
+  text-decoration: none;
+  color: var(--ridho-text);
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ridho_menu_link:hover,
+.ridho_menu_link.ridho_active {
+  background-color: var(--ridho-primary);
+  color: #ffffff;
+}
+
+.ridho_toggle_btn {
+  display: none;
+  background-color: var(--ridho-primary);
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* Hero Section */
+.ridho_hero {
+  background: linear-gradient(135deg, var(--ridho-primary), var(--ridho-secondary));
+  color: #ffffff;
+  padding: 64px 0;
+}
+
+.ridho_hero_title {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.ridho_hero_desc {
+  max-width: 680px;
+  margin-bottom: 24px;
+  opacity: 0.95;
+}
+
+.ridho_btn_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ridho_btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.ridho_btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.ridho_btn_primary {
+  background-color: var(--ridho-accent);
+  color: #111827;
+}
+
+.ridho_btn_outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+/* Section & Grid */
+.ridho_section {
+  padding: 48px 0;
+}
+
+.ridho_section_title {
+  font-size: 1.6rem;
+  color: var(--ridho-primary);
+  margin-bottom: 8px;
+}
+
+.ridho_section_subtitle {
+  color: var(--ridho-muted);
+  margin-bottom: 24px;
+}
+
+.ridho_grid_3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ridho_card {
+  background-color: var(--ridho-surface);
+  border: 1px solid var(--ridho-border);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(15, 76, 129, 0.05);
+}
+
+.ridho_card_title {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: var(--ridho-primary);
+}
+
+.ridho_card_text {
+  color: var(--ridho-muted);
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.ridho_link {
+  color: var(--ridho-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* Filter Tabs & Form */
+.ridho_filter_bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ridho_tab_btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--ridho-primary);
+  background-color: #ffffff;
+  color: var(--ridho-primary);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ridho_tab_btn.ridho_tab_active {
+  background-color: var(--ridho-primary);
+  color: #ffffff;
+}
+
+.ridho_form_box {
+  background-color: var(--ridho-surface);
+  border: 1px solid var(--ridho-border);
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 680px;
+}
+
+.ridho_form_group {
+  margin-bottom: 16px;
+}
+
+.ridho_label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.ridho_input,
+.ridho_textarea,
+.ridho_select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.ridho_input:focus,
+.ridho_textarea:focus,
+.ridho_select:focus {
+  outline: 2px solid var(--ridho-secondary);
+  border-color: var(--ridho-secondary);
+}
+
+.ridho_alert_success {
+  display: none;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 6px;
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+  font-weight: 500;
+}
+
+.ridho_list_clean {
+  padding-left: 20px;
+  color: var(--ridho-text);
+}
+
+.ridho_list_clean li {
+  margin-bottom: 8px;
+}
+
+.ridho_table_wrap {
+  width: 100%;
+  overflow-x: auto;
+  background-color: var(--ridho-surface);
+  border: 1px solid var(--ridho-border);
+  border-radius: 10px;
+  margin-top: 16px;
+}
+
+.ridho_table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 540px;
+}
+
+.ridho_table th,
+.ridho_table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--ridho-border);
+}
+
+.ridho_table th {
+  background-color: var(--ridho-primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ridho_badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background-color: #dbeafe;
+  color: var(--ridho-primary);
+  margin-bottom: 10px;
+}
+
+.ridho_media_box {
+  height: 160px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ridho-primary);
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+  padding: 12px;
+}
+
+.ridho_gallery_img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.ridho_video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 10px;
+  border: 1px solid var(--ridho-border);
+  background-color: #000000;
+  margin-top: 12px;
+}
+
+/* Footer */
+#ridho_footer {
+  background-color: #0b2545;
+  color: #e2e8f0;
+  padding: 28px 0;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .ridho_grid_3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .ridho_toggle_btn {
+    display: inline-block;
+  }
+
+  .ridho_menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 12px;
+  }
+
+  .ridho_menu.ridho_menu_open {
+    display: flex;
+  }
+
+  .ridho_nav_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .ridho_grid_3 {
+    grid-template-columns: 1fr;
+  }
+
+  .ridho_hero_title {
+    font-size: 1.7rem;
+  }
+}

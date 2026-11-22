@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - SMA Harapan Nusantara</title>
+  <link rel="stylesheet" href="css/ridho_style.css" />
+</head>
+<body class="ridho_body">
+  <header id="ridho_header">
+    <div class="ridho_container ridho_nav_wrapper">
+      <a href="index.html" class="ridho_brand">SMA Harapan Nusantara</a>
+      <button type="button" id="ridho_menu_toggle" class="ridho_toggle_btn" aria-label="Buka Menu">
+        Menu
+      </button>
+      <nav aria-label="Navigasi Utama">
+        <ul id="ridho_nav_list" class="ridho_menu">
+          <li><a href="index.html" class="ridho_menu_link">Beranda</a></li>
+          <li><a href="profil.html" class="ridho_menu_link">Profil</a></li>
+          <li><a href="akademik.html" class="ridho_menu_link">Akademik</a></li>
+          <li><a href="guru.html" class="ridho_menu_link">Guru</a></li>
+          <li><a href="berita.html" class="ridho_menu_link">Berita</a></li>
+          <li><a href="galeri.html" class="ridho_menu_link">Galeri</a></li>
+          <li><a href="kontak.html" class="ridho_menu_link ridho_active">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="ridho_main">
+    <section class="ridho_section">
+      <div class="ridho_container">
+        <h1 class="ridho_section_title">Kontak Sekolah</h1>
+        <p class="ridho_section_subtitle">
+          Jl. Pendidikan No. 45, Kota Tasikmalaya | Telp: (0265) 000-123 | Email: info@smaharapannusantara.sch.id
+        </p>
+
+        <div class="ridho_form_box">
+          <form id="ridho_contact_form" novalidate>
+            <div class="ridho_form_group">
+              <label for="ridho_nama" class="ridho_label">Nama Lengkap</label>
+              <input type="text" id="ridho_nama" class="ridho_input" placeholder="Masukkan nama Anda" required />
+            </div>
+
+            <div class="ridho_form_group">
+              <label for="ridho_email" class="ridho_label">Alamat Email</label>
+              <input type="email" id="ridho_email" class="ridho_input" placeholder="nama@email.com" required />
+            </div>
+
+            <div class="ridho_form_group">
+              <label for="ridho_topik" class="ridho_label">Topik Pesan</label>
+              <select id="ridho_topik" class="ridho_select">
+                <option value="Informasi Pendaftaran">Informasi Pendaftaran</option>
+                <option value="Layanan Akademik">Layanan Akademik</option>
+                <option value="Kerja Sama & Kunjungan">Kerja Sama & Kunjungan</option>
+              </select>
+            </div>
+
+            <div class="ridho_form_group">
+              <label for="ridho_pesan" class="ridho_label">Isi Pesan</label>
+              <textarea id="ridho_pesan" rows="5" class="ridho_textarea" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" id="ridho_submit_btn" class="ridho_btn ridho_btn_primary">
+              Kirim Pesan
+            </button>
+          </form>
+
+          <div id="ridho_form_feedback" class="ridho_alert_success" role="status"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="ridho_footer">
+    <div class="ridho_container">
+      <p>&copy; 2026 SMA Harapan Nusantara.</p>
+    </div>
+  </footer>
+
+  <script src="js/ridho_app.js"></script>
+</body>
+</html>

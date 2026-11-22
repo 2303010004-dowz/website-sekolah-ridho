@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guru & Staf - SMA Harapan Nusantara</title>
+  <link rel="stylesheet" href="css/ridho_style.css" />
+</head>
+<body class="ridho_body">
+  <header id="ridho_header">
+    <div class="ridho_container ridho_nav_wrapper">
+      <a href="index.html" class="ridho_brand">SMA Harapan Nusantara</a>
+      <button type="button" id="ridho_menu_toggle" class="ridho_toggle_btn" aria-label="Buka Menu">
+        Menu
+      </button>
+      <nav aria-label="Navigasi Utama">
+        <ul id="ridho_nav_list" class="ridho_menu">
+          <li><a href="index.html" class="ridho_menu_link">Beranda</a></li>
+          <li><a href="profil.html" class="ridho_menu_link">Profil</a></li>
+          <li><a href="akademik.html" class="ridho_menu_link">Akademik</a></li>
+          <li><a href="guru.html" class="ridho_menu_link ridho_active">Guru</a></li>
+          <li><a href="berita.html" class="ridho_menu_link">Berita</a></li>
+          <li><a href="galeri.html" class="ridho_menu_link">Galeri</a></li>
+          <li><a href="kontak.html" class="ridho_menu_link">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="ridho_main">
+    <section class="ridho_section">
+      <div class="ridho_container">
+        <h1 class="ridho_section_title">Guru & Tenaga Kependidikan</h1>
+        <p class="ridho_section_subtitle">
+          Tim pendidik dan staf yang mendampingi proses belajar siswa sehari-hari.
+        </p>
+
+        <div class="ridho_filter_bar">
+          <button type="button" class="ridho_tab_btn ridho_guru_filter ridho_tab_active" data-role="semua">Semua</button>
+          <button type="button" class="ridho_tab_btn ridho_guru_filter" data-role="mapel">Guru Mata Pelajaran</button>
+          <button type="button" class="ridho_tab_btn ridho_guru_filter" data-role="staf">Tenaga Kependidikan</button>
+        </div>
+
+        <div class="ridho_grid_3">
+          <article class="ridho_card ridho_guru_card" data-role="mapel">
+            <span class="ridho_badge">Matematika</span>
+            <h2 class="ridho_card_title">Drs. Hendra Wijaya, M.Pd.</h2>
+            <p class="ridho_card_text">
+              Koordinator bidang Matematika dan pembina olimpiade numerasi tingkat sekolah.
+            </p>
+          </article>
+
+          <article class="ridho_card ridho_guru_card" data-role="mapel">
+            <span class="ridho_badge">Informatika</span>
+            <h2 class="ridho_card_title">Nadia Kusuma, S.Kom.</h2>
+            <p class="ridho_card_text">
+              Pengampu mata pelajaran Informatika, logika pemrograman, dan literasi digital siswa.
+            </p>
+          </article>
+
+          <article class="ridho_card ridho_guru_card" data-role="mapel">
+            <span class="ridho_badge">Bahasa Indonesia</span>
+            <h2 class="ridho_card_title">Rina Pratiwi, S.Pd.</h2>
+            <p class="ridho_card_text">
+              Pengajar Bahasa Indonesia serta pembina tim jurnalistik dan karya tulis ilmiah.
+            </p>
+          </article>
+
+          <article class="ridho_card ridho_guru_card" data-role="mapel">
+            <span class="ridho_badge">Bahasa Inggris</span>
+            <h2 class="ridho_card_title">Fajar Nugroho, S.Pd.</h2>
+            <p class="ridho_card_text">
+              Pengampu Bahasa Inggris dan pembimbing klub debat serta komunikasi global.
+            </p>
+          </article>
+
+          <article class="ridho_card ridho_guru_card" data-role="staf">
+            <span class="ridho_badge">Perpustakaan</span>
+            <h2 class="ridho_card_title">Siti Aminah, A.Md.</h2>
+            <p class="ridho_card_text">
+              Pustakawan sekolah yang mengelola katalog buku, layanan baca, dan arsip referensi.
+            </p>
+          </article>
+
+          <article class="ridho_card ridho_guru_card" data-role="staf">
+            <span class="ridho_badge">Tata Usaha</span>
+            <h2 class="ridho_card_title">Budi Santoso, S.Sos.</h2>
+            <p class="ridho_card_text">
+              Koordinator administrasi akademik, surat-menyurat, dan layanan informasi siswa/orang tua.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="ridho_footer">
+    <div class="ridho_container">
+      <p>&copy; 2026 SMA Harapan Nusantara.</p>
+    </div>
+  </footer>
+
+  <script src="js/ridho_app.js"></script>
+</body>
+</html> 
